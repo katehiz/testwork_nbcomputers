@@ -30,7 +30,7 @@ const config = {
 					MiniCssExtractPlugin.loader, // перемещает css в отдельный файл
 					"css-loader", 				 // интерпретация import/require()
 					"postcss-loader",			 // обработка css плагинами постобработки
-					"sass-loader"			 	 // понимание синтаксиса scss в css
+					"sass-loader"			 	 // интерпретация синтаксиса scss в css
 				]
 			},
 			{

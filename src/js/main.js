@@ -20,7 +20,7 @@ class State {
  * @param {Object} state - объект с комплектациями
  */
 async function initGlobalStage() {
-	let data = await SendAjaxRequest("GET", "/src/db.json");
+	let data = await SendAjaxRequest("GET", "./db.json");
 	// установка начальных значений комплекта
 	let checkedState = JSON.parse(data).map( group => {
 		group.config[0].selected = true;

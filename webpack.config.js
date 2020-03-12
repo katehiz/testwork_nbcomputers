@@ -12,7 +12,7 @@ const config = {
 		publicPath: "/"
 	},
 	devServer: {
-		contentBase: path.join(__dirname, "/"),
+		contentBase: path.join(__dirname, "dist"),
 		overlay: true
 	},
 	module: {
@@ -52,8 +52,9 @@ const config = {
 			filename: "build.css"
 		}),
 		new HtmlWebpackPlugin({
-			template: __dirname + "/src/index.html",
-			inject: 'body',
+			template: path.join(__dirname, "./src/index.html"),
+			title: "MacBook Configurator",
+			inject: true,
 			filename: "index.html"
 		})
 	]

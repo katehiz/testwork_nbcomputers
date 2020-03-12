@@ -2,10 +2,10 @@ import $ from 'jquery';
 
 export const Accordion = (function (document) {
 	function init() {
-		let toggleButtons = document.querySelectorAll(".toggle-btn");
+		let toggleButtons = document.querySelectorAll(".option-group__head");
 		if (!toggleButtons) return;
 		[...toggleButtons].forEach(function (button) {
-			let optionGroupBody = $(button).parents('.option-group__head').next();
+			let optionGroupBody = $(button).next();
 			if (!optionGroupBody.length) return;
 			button.addEventListener("click", function () {
 				optionGroupBody.slideToggle(300, () => {

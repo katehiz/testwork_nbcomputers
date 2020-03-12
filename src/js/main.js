@@ -116,7 +116,7 @@ document.addEventListener('render', function () {
 	renderComplect();
 
 	// генерируем событие "optionChecked" с параметрами при клике на опцию
-	$('.config-group input[type="radio"]').on('click', function(event) {
+	$('.option-group input[type="radio"]').on('click', function(event) {
 		// создаем событие с параметрами
 		document.dispatchEvent( new CustomEvent("optionChecked", {
 			bubbles: true,
